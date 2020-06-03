@@ -7,17 +7,33 @@
   
   
   
-  <title>Stay Passion</title>
+  <title>搭建WordPress | Stay Passion</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="帅气">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Stay Passion">
-<meta property="og:url" content="https://todream0117.github.io/index.html">
+  <meta name="description" content="记录通过阿里云服务器 搭建wordpress个人博客写在前面在成功搭建完静态博客以后，使用了一段时间，但是最近发现访问有时候访问不了，需要依靠科学上网才可以访问，于是就买了一台服务器，准备搭建我的博客2.0 这次使用的是lamp进行搭建，那什么是lamp呢，就是Linux、Apache、MySql、PHP，当然还有lnmpa，lnmp，其中n就表示Nginx。 我们的环境是 服务器：CentOS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="搭建WordPress">
+<meta property="og:url" content="https://todream0117.github.io/2020/05/26/%E6%90%AD%E5%BB%BAWordPress/index.html">
 <meta property="og:site_name" content="Stay Passion">
-<meta property="og:description" content="帅气">
+<meta property="og:description" content="记录通过阿里云服务器 搭建wordpress个人博客写在前面在成功搭建完静态博客以后，使用了一段时间，但是最近发现访问有时候访问不了，需要依靠科学上网才可以访问，于是就买了一台服务器，准备搭建我的博客2.0 这次使用的是lamp进行搭建，那什么是lamp呢，就是Linux、Apache、MySql、PHP，当然还有lnmpa，lnmp，其中n就表示Nginx。 我们的环境是 服务器：CentOS">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/WhyYouStarted/PhotoGallery@master/images/BuildBlog/%E6%88%AA%E5%B1%8F2020-03-28%E4%B8%8B%E5%8D%883.28.58.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/WhyYouStarted/PhotoGallery@master/images/BuildBlog/%E6%88%AA%E5%B1%8F2020-03-28%E4%B8%8B%E5%8D%883.35.49.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/WhyYouStarted/PhotoGallery@master/images/BuildBlog/%E6%88%AA%E5%B1%8F2020-03-28%E4%B8%8B%E5%8D%883.39.01.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/WhyYouStarted/PhotoGallery@master/images/BuildBlog/%E6%88%AA%E5%B1%8F2020-03-28%E4%B8%8B%E5%8D%883.47.19.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/WhyYouStarted/PhotoGallery@master/images/BuildBlog/%E6%88%AA%E5%B1%8F2020-03-28%E4%B8%8B%E5%8D%883.57.08.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/WhyYouStarted/PhotoGallery@master/images/BuildBlog/%E6%88%AA%E5%B1%8F2020-03-28%E4%B8%8B%E5%8D%884.00.47.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/WhyYouStarted/PhotoGallery@master/images/BuildBlog/%E6%88%AA%E5%B1%8F2020-03-28%E4%B8%8B%E5%8D%884.25.10.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/WhyYouStarted/PhotoGallery@master/images/BuildBlog/%E6%88%AA%E5%B1%8F2020-03-28%E4%B8%8B%E5%8D%884.32.22.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/WhyYouStarted/PhotoGallery@master/images/BuildBlog/%E6%88%AA%E5%B1%8F2020-03-28%E4%B8%8B%E5%8D%884.42.04.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/WhyYouStarted/PhotoGallery@master/images/BuildBlog/%E6%88%AA%E5%B1%8F2020-03-28%E4%B8%8B%E5%8D%885.55.23.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/WhyYouStarted/PhotoGallery@master/images/BuildBlog/%E6%88%AA%E5%B1%8F2020-03-28%E4%B8%8B%E5%8D%886.33.15.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/WhyYouStarted/PhotoGallery@master/images/BuildBlog/%E6%88%AA%E5%B1%8F2020-03-28%E4%B8%8B%E5%8D%886.35.55.png">
+<meta property="article:published_time" content="2020-05-26T15:20:43.000Z">
+<meta property="article:modified_time" content="2020-06-03T14:20:40.384Z">
 <meta property="article:author" content="徐鑫">
+<meta property="article:tag" content="bulid">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/WhyYouStarted/PhotoGallery@master/images/BuildBlog/%E6%88%AA%E5%B1%8F2020-03-28%E4%B8%8B%E5%8D%883.28.58.png">
   
     <link rel="alternative" href="/atom.xml" title="Stay Passion" type="application/atom+xml">
   
@@ -35,9 +51,6 @@
   <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   
-    
-    
-  
   
       <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
   
@@ -48,8 +61,8 @@
       var yiliaConfig = {
           fancybox: true,
           animate: true,
-          isHome: true,
-          isPost: false,
+          isHome: false,
+          isPost: true,
           isArchive: false,
           isTag: false,
           isCategory: false,
@@ -281,9 +294,7 @@
         </header>
     </div>
 </nav>
-      <div class="body-wrap">
-  
-    <article id="post-搭建WordPress" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-搭建WordPress" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
       <a  href="/2020/05/26/%E6%90%AD%E5%BB%BAWordPress/" class="article-date">
@@ -300,13 +311,28 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a  class="article-title" href="/2020/05/26/%E6%90%AD%E5%BB%BAWordPress/">搭建WordPress</a>
+    <h1 class="article-title" itemprop="name">
+      搭建WordPress
     </h1>
   
 
 
       </header>
+      
+      <div class="article-info article-info-post">
+        
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/bulid/">bulid</a>
+    </div>
+
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/bulid/" rel="tag">bulid</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
       
     
     <div class="article-entry" itemprop="articleBody">
@@ -431,39 +457,146 @@
       
     </div>
     
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/bulid/">bulid</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/bulid/" rel="tag">bulid</a></li></ul>
-    </div>
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
   </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a  href="/2020/05/26/%E6%90%AD%E5%BB%BAWordPress/">搭建WordPress</a></p>
+        <p><span>文章作者:</span><a  href="/" title="访问 徐鑫 的个人博客">徐鑫</a></p>
+        <p><span>发布时间:</span>2020年05月26日 - 23时20分</p>
+        <p><span>最后更新:</span>2020年06月03日 - 22时20分</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2020/05/26/%E6%90%AD%E5%BB%BAWordPress/" title="搭建WordPress">https://todream0117.github.io/2020/05/26/%E6%90%AD%E5%BB%BAWordPress/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://todream0117.github.io/2020/05/26/%E6%90%AD%E5%BB%BAWordPress/　　作者: 徐鑫" title=""></span>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" target="_blank" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+
   
 </article>
 
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#记录通过阿里云服务器-搭建wordpress个人博客"><span class="toc-number">1.</span> <span class="toc-text">记录通过阿里云服务器 搭建wordpress个人博客</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#写在前面"><span class="toc-number">1.1.</span> <span class="toc-text">写在前面</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-设置www用户"><span class="toc-number">1.2.</span> <span class="toc-text">1. 设置www用户</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-装apache、MySQL"><span class="toc-number">1.3.</span> <span class="toc-text">2.装apache、MySQL</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-MySql数据库配置"><span class="toc-number">1.4.</span> <span class="toc-text">2.MySql数据库配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-安装wordpress"><span class="toc-number">1.5.</span> <span class="toc-text">3.安装wordpress</span></a></li></ol></li></ol>
+</div>
+<style>
+    .left-col .switch-btn {
+        display: none;
+    }
+    .left-col .switch-area {
+        display: none;
+    }
+</style>
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+            $(".switch-btn, .switch-area").fadeOut(300);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+            $(".switch-btn, .switch-area").fadeIn(500);
+        }
+    })
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+        $(".switch-btn, .switch-area").show();
+    }
+</script>
 
 
 
 
+<div class="bdsharebuttonbox">
+	<a href="#" class="fx fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+	<a href="#" class="fx fa-weixin bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+	<a href="#" class="fx fa-qq bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+	<a href="#" class="fx fa-facebook-official bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+	<a href="#" class="fx fa-twitter bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+	<a href="#" class="fx fa-linkedin bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+	<a href="#" class="fx fa-files-o bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+</div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
 
 
 
 
+    
+        <section id="comments">
+<link rel="stylesheet" href="/css/gitment.min.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: '搭建WordPress', // 可选。默认为 location.href
+  owner: 'todream0117',
+  repo: 'blogComment',
+  oauth: {
+    client_id: '9f14f1d70208810890d2',
+    client_secret: '64444bd7187a165141b637f28af57cd2b61fb866',
+  },
+})
+gitment.render('comments')
+</script>
+</section>
+    
 
 
-  
-  
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a  href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        
+            <a  href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+    </div>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2020/05/26/%E6%90%AD%E5%BB%BAWordPress/">搭建WordPress</a></li></ul>
+    
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+
+    <script>
+        $(".post-list").addClass("toc-article");
+        // $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#toc, .switch-btn, .switch-area").toggle();
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+                $(".switch-btn, .switch-area").fadeToggle(300);
+            }
+        })
+    </script>
+
+
+
+
+    <script>
+        
+    </script>
 
 </div>
       <footer id="footer">
