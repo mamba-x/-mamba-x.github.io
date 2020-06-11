@@ -199,7 +199,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <a href="/tags/basics/" style="font-size: 20px;">basics</a> <a href="/tags/config/" style="font-size: 10px;">config</a> <a href="/tags/interview/" style="font-size: 20px;">interview</a>
+                        <a href="/tags/basics/" style="font-size: 20px;">basics</a> <a href="/tags/config/" style="font-size: 10px;">config</a> <a href="/tags/interview/" style="font-size: 15px;">interview</a>
                     </div>
                 </section>
                 
@@ -502,7 +502,37 @@ ga('send', 'pageview');
 
   </div>
 </body>
-</html>});
+</html> {
+                $(".article-info").toggle(200);
+            });
+        });
+    </script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+  <script language="javascript">
+    $(function() {
+        $("a[title]").each(function() {
+            var a = $(this);
+            var title = a.attr('title');
+            if (title == undefined || title == "") return;
+            a.data('title', title).removeAttr('title').hover(
+            function() {
+                var offset = a.offset();
+                $("<div id=\"anchortitlecontainer\"></div>").appendTo($("body")).html(title).css({
+                    top: offset.top - a.outerHeight() - 15,
+                    left: offset.left + a.outerWidth()/2 + 1
+                }).fadeIn(function() {
+                    var pop = $(this);
+                    setTimeout(function() {
+                        pop.remove();
+                    }, pop.text().length * 800);
+                });
+            }, function() {
+                $("#anchortitlecontainer").remove();
+            });
+        });
     });
 </script>
 
