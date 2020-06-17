@@ -359,6 +359,23 @@
 
 
     
+        <section id="comments">
+<link rel="stylesheet" href="/css/gitment.min.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: '', // 可选。默认为 location.href
+  owner: 'todream0117',
+  repo: 'blogComment',
+  oauth: {
+    client_id: 'b42015c2732134a1738e',
+    client_secret: 'ba7ce2e883ea70e05dff932036fec0673a278454',
+  },
+})
+gitment.render('comments')
+</script>
+</section>
+    
 
 
 
