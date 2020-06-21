@@ -306,21 +306,73 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <ol>
-<li><h3 id="JRE-Java-Runtime-Environment-Java运行环境"><a href="#JRE-Java-Runtime-Environment-Java运行环境" class="headerlink" title="JRE(Java Runtime Environment Java运行环境)"></a>JRE(Java Runtime Environment Java运行环境)</h3><p>​    Jre包括<strong>Java虚拟机</strong>和Java程序所需的<strong>核心类库</strong> (Jre = Jvm + 类库)</p>
+        <h2 id="了解配置JDK和JRE"><a href="#了解配置JDK和JRE" class="headerlink" title="了解配置JDK和JRE"></a>了解配置JDK和JRE</h2><h3 id="JRE-Java-Runtime-Environment-Java运行环境"><a href="#JRE-Java-Runtime-Environment-Java运行环境" class="headerlink" title="JRE(Java Runtime Environment Java运行环境)"></a>JRE(Java Runtime Environment Java运行环境)</h3><p>​    Jre包括<strong>Java虚拟机</strong>和Java程序所需的<strong>核心类库</strong> (Jre = Jvm + 类库)</p>
 <p>​    如果要运行一个开发好的Java程序，计算机中只需安装Jre即可</p>
-</li>
-<li><h3 id="JDK-Java-Development-kit-Java开发工具包"><a href="#JDK-Java-Development-kit-Java开发工具包" class="headerlink" title="JDK(Java Development kit Java开发工具包)"></a>JDK(Java Development kit Java开发工具包)</h3><p>​    Jdk提供给Java开发人员使用</p>
+<h3 id="JDK-Java-Development-kit-Java开发工具包"><a href="#JDK-Java-Development-kit-Java开发工具包" class="headerlink" title="JDK(Java Development kit Java开发工具包)"></a>JDK(Java Development kit Java开发工具包)</h3><p>​    Jdk提供给Java开发人员使用</p>
 <p>​    Jdk其中包含了Java的<strong>开发工具</strong>，也包含了<strong>Jre</strong>(Jdk = jre + 开发工具)</p>
 <p>​    安装好了Jdk，就不需要在单独安装Jre了</p>
 <p>​    其中开发工具举例：编译工具(javac.exe)、打包工具(jar.exe)…</p>
-</li>
-<li><h3 id="JDK的下载"><a href="#JDK的下载" class="headerlink" title="JDK的下载"></a>JDK的下载</h3><p>​    下载网址：<a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html" target="_blank" rel="noopener">http://www.oracle.com/technetwork/java/javase/downloads/index.html</a></p>
+<h3 id="JDK的下载"><a href="#JDK的下载" class="headerlink" title="JDK的下载"></a>JDK的下载</h3><p>​    下载网址：<a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html" target="_blank" rel="noopener">http://www.oracle.com/technetwork/java/javase/downloads/index.html</a></p>
 <p>​    进入页面如下：</p>
-<p>​    </p>
+<p>​    <img src="https://cdn.jsdelivr.net/gh/todream0117/Image@master/hexo/JDK%E4%B8%8B%E8%BD%BD%E9%A1%B5%E9%9D%A2.png" alt=""></p>
+<p>  下面还有不同的版本可以选择</p>
+<h3 id="安装JDK"><a href="#安装JDK" class="headerlink" title="安装JDK"></a>安装JDK</h3><p> 此处示例安装的是Java 8(1.8)版本的JDK，该版本也是目前使用最多的版本</p>
+<ol>
+<li><p>下载好JDK后，双击已经下载完毕的安装文件，开始安装</p>
+<p><img src="https://cdn.jsdelivr.net/gh/todream0117/Image@master/hexo/jdk%E5%AE%89%E8%A3%85%E6%AD%A5%E9%AA%A4(1).png" alt=""></p>
 </li>
-<li></li>
+<li><p>选择JDK的安装目录，建议使用默认路径，放在纯英文路径下</p>
+<p><img src="https://cdn.jsdelivr.net/gh/todream0117/Image@master/hexo/jdk%E5%AE%89%E8%A3%85%E6%AD%A5%E9%AA%A4(22).png" alt=""></p>
+</li>
+<li><p>点击下一步，如果出现下图的警告信息，直接点击 “确定” 继续</p>
+<p><img src="https://cdn.jsdelivr.net/gh/todream0117/Image@master/hexo/jdk%E5%AE%89%E8%A3%85%E6%AD%A5%E9%AA%A4(3).png" alt=""></p>
+</li>
+<li><p>点击下一步，弹出一个窗口，这是来选择安装jre的路径的，仍然使用默认路径</p>
+<p><img src="https://cdn.jsdelivr.net/gh/todream0117/Image@master/hexo/jdk%E5%AE%89%E8%A3%85%E6%AD%A5%E9%AA%A4(4).png" alt=""></p>
+</li>
+<li><p>安装成功</p>
+</li>
 </ol>
+<p><img src="https://cdn.jsdelivr.net/gh/todream0117/Image@master/hexo/jdk%E5%AE%89%E8%A3%85%E6%AD%A5%E9%AA%A4(55).png" alt=""></p>
+<h2 id="配置环境变量的三种方式"><a href="#配置环境变量的三种方式" class="headerlink" title="配置环境变量的三种方式"></a>配置环境变量的三种方式</h2><p>在完成上述安装JDK操作后，就可以开始配置环境变量了</p>
+<p>那么为什么要配置环境变量呢？</p>
+<p><code>必须配置环境变量才能使用Java开发环境</code></p>
+<p><code>在win10下，只需要配置环境变量Path(可以使系统在任何路径下都能识别Java命令)即可</code></p>
+<p>所以为了能在我们电脑的任何路径下都可以使用Java命令我们需要在系统环境变量中进行相应的配置</p>
+<p>如果你是一个特特特勤快的人可以选择每次都切到JDK安装所在的路径中去运行Java命令(显然你不是)</p>
+<h3>系统环境变量</h3>
+
+<p>这里友情提供如何找到环境变量配置的位置</p>
+<p>右击我的电脑 – 选择属性 – 高级 – 右下角点击环境变量</p>
+<p><img src="https://cdn.jsdelivr.net/gh/todream0117/Image@master/hexo/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F.png" alt=""></p>
+<p>注意：下面所有的操作都是针对于 <strong><u>系统变量</u></strong> 进行 </p>
+<h3 id="一劳永逸"><a href="#一劳永逸" class="headerlink" title="一劳永逸"></a>一劳永逸</h3><p>所谓一劳永逸呢，就是做一次配置就可以一直使用了</p>
+<p>在path中配置应用程序的路径，使用;来对不同的变量值就行分割</p>
+<h3>技巧配置</h3>
+
+<p>将Java程序的路径赋值给JAVA-HOME</p>
+<p>然后在path中配置 <strong>%JAVA-HOME\bin%</strong> ,此处的 ‘%’ 用来区别其不是一个文件夹</p>
+<p>这样配置的好处是：路径或者文件名有改动的时候，只需对JAVA-HOME中的值做对应修改即可</p>
+<h3>临时配置</h3>
+
+<p>通过dos命令中的set命令完成</p>
+<p>set用于查看本机所有环境变量的信息</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">set 变量名   :查看具体一个环境变量的值</span><br><span class="line">set 变量名 = :清空一个环境变量的值</span><br><span class="line">set 变量名 = 具体值:给指定变量定义具体值</span><br></pre></td></tr></table></figure>
+
+<p>在原有环境上配置新值：set path = 新值 ; %path%</p>
+<p>注：该配置方式只在dos窗口有效，窗口关闭，配置消失</p>
+<h3>配置Classpath</h3>
+
+<p>classpath：类文件的路径，给JVM使用</p>
+<p>在没有配置Classpath的情况下，默认为当前目录</p>
+<p>配置了classpath后，优先去classpath配置的目录中去进行查找</p>
+<p>可使用上述的几种方式对calsspath进行配置(自己动手，丰衣足食)</p>
+<h3 id="测试环境变量是否配置成功"><a href="#测试环境变量是否配置成功" class="headerlink" title="测试环境变量是否配置成功"></a>测试环境变量是否配置成功</h3><p>JDK配置完成后，需要进行测试，来确认是否配置成功</p>
+<ul>
+<li>windows + R 打开搜索框，输入cmd，回车启动命令提示符对话框</li>
+<li>在命令提示框中输入 “javac” ，按 “Enter”键，显示如下信息即说明JDK环境搭建成功</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/todream0117/Image@master/hexo/%E6%B5%8B%E8%AF%95JDK%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE%E6%98%AF%E5%90%A6%E6%88%90%E5%8A%9F.png" alt=""></p>
 
       
     </div>
