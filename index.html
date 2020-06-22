@@ -277,6 +277,87 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-线程的几种状态" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a  href="/2020/06/22/%E7%BA%BF%E7%A8%8B%E7%9A%84%E5%87%A0%E7%A7%8D%E7%8A%B6%E6%80%81/" class="article-date">
+      <time datetime="2020-06-22T08:37:54.000Z" itemprop="datePublished">2020-06-22</time>
+</a>
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a  class="article-title" href="/2020/06/22/%E7%BA%BF%E7%A8%8B%E7%9A%84%E5%87%A0%E7%A7%8D%E7%8A%B6%E6%80%81/">线程的几种状态</a>
+    </h1>
+  
+
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h3 id="线程的物种状态"><a href="#线程的物种状态" class="headerlink" title="线程的物种状态"></a>线程的物种状态</h3><ol>
+<li>新建状态：new Thread();</li>
+<li>就绪状态：t.starts();  等待获得CPU</li>
+<li>运行状态：获得CPU，实现run方法</li>
+<li>阻塞状态：执行了Thread.sleep方法，发生了IO操作，或者调用了同步锁的外套方法</li>
+<li>死亡状态：代码执行完毕</li>
+</ol>
+<h3 id="sleep和yield的区别"><a href="#sleep和yield的区别" class="headerlink" title="sleep和yield的区别"></a>sleep和yield的区别</h3><ol>
+<li><p>sleep 不考虑线程的优先级(一个线程睡眠后其他线程都有机会获得CPU)</p>
+<p>yield 要考虑线程优先级(仅让位给 跟自己同等优先级或优先级比自己高的线程)</p>
+</li>
+<li><p>sleep 可能抛出 InterruptedException，而yield不会抛出异常</p>
+</li>
+<li><p>sleep 导致运行状态的线程进入到阻塞状态，而yield会导致运行状态的线程进入就绪状态</p>
+</li>
+</ol>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/java/">java</a>
+    </div>
+
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/interview/" rel="tag">interview</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+
+
+  
     <article id="post-jva语言基础" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
