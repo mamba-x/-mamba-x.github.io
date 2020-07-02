@@ -358,10 +358,10 @@
 
 
   
-    <article id="post-jva语言基础" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-java语言基础" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a  href="/2020/06/22/jva%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/" class="article-date">
+      <a  href="/2020/06/22/java%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/" class="article-date">
       <time datetime="2020-06-21T16:12:00.000Z" itemprop="datePublished">2020-06-22</time>
 </a>
 
@@ -376,7 +376,7 @@
         
   
     <h1 itemprop="name">
-      <a  class="article-title" href="/2020/06/22/jva%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/">jva语言基础</a>
+      <a  class="article-title" href="/2020/06/22/java%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/">java语言基础</a>
     </h1>
   
 
@@ -387,7 +387,26 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        
+        <h3>Java的三个顶级元素</h3>
+
+<ol>
+<li><p>包(<strong>package</strong>)声明</p>
+<p>一个Java程序是由若干个类组成的，难免会遇到类名相同的情况</p>
+<p>所以包主要是为了解决类名相同的时候命名冲突的问题</p>
+<p>一个类可以添加package</p>
+<p>一旦添加了package那么代表这个类编译生成的class文件必须在这个package指定的路径中存放</p>
+<p>一个文件中可以使用好多个package，使用 <strong>.</strong> 分割</p>
+</li>
+<li><p>导入(<strong>import</strong>)元素</p>
+<p>使用的情况：在一个类中需要使用另一个类</p>
+<p>如果包使用的类和我们的类不在同一个结构下，</p>
+<p>同时也不在Java.lang包下面，那么就必须使用import导入这个类</p>
+</li>
+<li><p>类(<strong>class</strong>)元素</p>
+<p>class必须出现，我们所有的代码必须位于class中</p>
+</li>
+</ol>
+
       
     </div>
     
@@ -519,6 +538,8 @@
 <li>在命令提示框中输入 “javac” ，按 “Enter”键，显示如下信息即说明JDK环境搭建成功</li>
 </ul>
 <p><img src="https://cdn.jsdelivr.net/gh/todream0117/Image@master/hexo/%E6%B5%8B%E8%AF%95JDK%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE%E6%98%AF%E5%90%A6%E6%88%90%E5%8A%9F.png" alt=""></p>
+<h3 id="对Java环境做一个了解"><a href="#对Java环境做一个了解" class="headerlink" title="对Java环境做一个了解"></a>对Java环境做一个了解</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">bin     ： java javac 常用命令</span><br><span class="line">lib     ： 支持软件相关的jar</span><br><span class="line">db      ： 数据库相关内容</span><br><span class="line">include ： C语言相关内容</span><br><span class="line">ire     ： 程序运行相关内容</span><br><span class="line">src.zip ： Java源代码</span><br><span class="line">demo    ： 例子</span><br></pre></td></tr></table></figure>
+
 
       
     </div>
